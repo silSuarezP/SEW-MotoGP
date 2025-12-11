@@ -92,3 +92,12 @@ h3 {
     margin-top: 2em;
 }
 
+/* Especificidad: 001 */
+footer {
+    background-color: #222;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+

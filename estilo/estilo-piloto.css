@@ -71,7 +71,7 @@ table th, table td {
 /* Especificidad: 002 */
 table th {
     background-color: #ff6600;
-    color: #fff;
+    color: #000000;
 }
 
 /* Especificidad: 012 */
@@ -79,14 +79,7 @@ table tr:nth-child(even) {
     background-color: #1e1e1e;
 }
 
-/* Especificidad: 001 */
-footer {
-    background-color: #222;
-    color: #888;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 40px;
-}
+
 
 /* Especificidad: 001 */
 audio {
