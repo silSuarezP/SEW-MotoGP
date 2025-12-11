@@ -1,0 +1,126 @@
+/* Silvia Suárez Prendes - UO277412 */
+/* Estilos para el documento piloto.html */
+
+/* Especificidad: 001 */
+dl {
+    display: grid;
+    grid-template-columns: max-content 1fr; /* dt al lado de dd */
+    gap: 8px 16px; /* espacio entre filas y columnas */
+    padding: 16px 24px; /* espacio interno */
+    max-width: 500px; /* ancho máximo */
+    margin: 16px 0; /* separación de otros elementos */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* herencia tipográfica */
+}
+
+/* Especificidad: 002 */
+dl dt {
+    font-weight: 600; /* resalta el término */
+    color: #ff6600; /* color destacado (naranja MotoGP) */
+}
+
+/* Especificidad: 002 */
+dl dd {
+    margin: 0; /* eliminar margen por defecto */
+}
+
+
+/* Especificidad: 001 */
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Especificidad: 002 */
+figure img, figure video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+/* Especificidad: 001 */
+figcaption {
+    font-size: 0.9rem;
+    color: #cccccc;
+    margin-top: 5px;
+}
+
+/* Especificidad: 001 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+/* Especificidad: 002 */
+table caption {
+    caption-side: top;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffcc00;
+    margin-bottom: 5px;
+}
+
+/* Especificidad: 002 */
+table th, table td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Especificidad: 002 */
+table th {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+/* Especificidad: 012 */
+table tr:nth-child(even) {
+    background-color: #1e1e1e;
+}
+
+/* Especificidad: 001 */
+footer {
+    background-color: #222;
+    color: #888;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+/* Especificidad: 001 */
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    /* Especificidad: 002 */
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Especificidad: 002 */
+    header h2 {
+        font-size: 1rem;
+    }
+
+    /* Especificidad: 001 */
+    main {
+        padding: 15px 20px;
+    }
+
+    /* Especificidad: 001 */
+    h3 {
+        font-size: 1.1rem;
+    }
+}
+
+
+@media screen and (max-width: 465px) {
+    /* Especificidad: 001 */
+    h3 {
+        font-size: 1rem;
+    }
+}

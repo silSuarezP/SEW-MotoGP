@@ -1,0 +1,94 @@
+/* Silvia Suárez Prendes - UO277412 */
+/* Estilos generales del proyecto MotoGP-Desktop*/
+
+/* Especificidad: 001 */
+body {
+    font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna y legible */
+    background-color: #121212; /* fondo oscuro elegante */
+    color: #f5f5f5; /* texto claro para contraste */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Especificidad: 001 */
+header {
+    background: linear-gradient(90deg, #ff6600, #ff9900); /* degradado naranja */
+    padding: 20px 40px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+/* Especificidad: 002 */
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Especificidad: 003 */
+header h1 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Especificidad: 002 */
+header h2 {
+    font-size: 1.3rem;
+    color: #e0e0e0;
+    margin: 5px 0 0 0;
+}
+
+/* Especificidad: 001 */
+nav {
+    font-size: 1.3rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* herencia tipográfica */
+    color: #000000; /* texto principal oscuro, más profesional que blanco */
+}
+
+/* Especificidad: 001 */
+a {
+    color: #000000; /* naranja MotoGP para destacar enlaces */
+    text-decoration: none; /* eliminar subrayado por defecto */
+    font-weight: 600; /* un poco más de presencia */
+    transition: color 0.3s ease; /* transición suave al interactuar */
+}
+
+/* Especificidad: 011 */
+a:hover,
+a:focus {
+    color: #000000; /* naranja más oscuro al interactuar */
+    text-decoration: underline; /* indicar foco para accesibilidad */
+    outline: none; /* quitar borde de foco por defecto si se desea */
+}
+
+/* Especificidad: 001 */
+p {
+    margin: 1em 0;
+}
+
+/* Especificidad: 002 */
+p a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+/* Especificidad: 012 */
+p a:hover, p a:focus {
+    text-decoration: underline;
+}
+
+/* Especificidad: 001 */
+main {
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Especificidad: 001 */
+h3 {
+    color: #ff9900;
+    border-bottom: 2px solid #ff6600;
+    padding-bottom: 5px;
+    margin-top: 2em;
+}
+
