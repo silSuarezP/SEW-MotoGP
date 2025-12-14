@@ -1,0 +1,58 @@
+/* Silvia Suárez Prendes - UO277412 */
+/* Layout del proyecto MotoGP-Desktop */
+/* Esquemas de posicionamiento con flexbox */
+
+/* Especificidad: 001 */
+header {
+    display: flex;
+    align-items: center;          /* alineación vertical */
+    justify-content: space-between; /* h1 a la izquierda, nav a la derecha */
+    gap: 20px;                    /* separación entre elementos */
+    flex-wrap: wrap;              /* adaptabilidad en pantallas pequeñas */
+}
+
+/* Especificidad: 001 */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;        /* separación entre enlaces */
+    flex-wrap: wrap; /* permite salto de línea si no caben */
+}
+
+/* Especificidad: 002 */
+nav a {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Adaptabilidad en dispositivos móviles */
+@media screen and (min-width: 320px) and (max-width: 799px) {
+
+    /* Header en vertical */
+    /* Especificidad: 001 */
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;              /* deja crecer el header */
+        max-height: none;
+        padding: 20px;
+        gap: 12px;
+    }
+
+    /* Nav en vertical */
+    /* Especificidad: 001 */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    /* Enlaces del nav en vertical */
+    /* Especificidad: 002 */
+    nav a {
+        justify-content: center;
+    }
+}
+

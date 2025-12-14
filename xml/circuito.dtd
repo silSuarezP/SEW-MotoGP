@@ -1,0 +1,65 @@
+
+<!ELEMENT circuito (
+        nombre,
+        longitudCircuito,
+        anchuraMedia,
+        carrera,
+        ubicacion,
+        patrocinador,
+        referencias,
+        galeriaFotografias,
+        galeriaVideos,
+        origen,
+        tramos,
+        resultadoCarrera,
+        clasificacionMundial
+    )>
+
+<!ELEMENT nombre (#PCDATA)>
+
+<!ELEMENT longitudCircuito (#PCDATA)>
+<!ATTLIST longitudCircuito unidad CDATA #REQUIRED>
+
+
+<!ELEMENT anchuraMedia (#PCDATA)>
+<!ATTLIST anchuraMedia unidad CDATA #REQUIRED>
+
+<!ELEMENT carrera (fecha, horaInicio, vueltas)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT horaInicio (#PCDATA)>
+<!ELEMENT vueltas (#PCDATA)>
+
+<!ELEMENT ubicacion (localidad, pais)>
+<!ELEMENT localidad (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+
+<!ELEMENT patrocinador (#PCDATA)>
+
+<!ELEMENT referencias (referencia, referencia, referencia)>
+<!ELEMENT referencia (#PCDATA)>
+
+<!ELEMENT galeriaFotografias (fotografia, fotografia?, fotografia?, fotografia?, fotografia?)>
+<!ELEMENT fotografia (#PCDATA)>
+
+<!ELEMENT galeriaVideos (video, video?, video?)>
+<!ELEMENT video (#PCDATA)>
+
+<!ELEMENT origen (coordenadas)>
+<!ELEMENT coordenadas (longitudGeo, latitud, altitud)>
+<!ELEMENT longitudGeo (#PCDATA)>
+<!ELEMENT latitud (#PCDATA)>
+<!ELEMENT altitud (#PCDATA)>
+
+<!ELEMENT tramos (tramo+)>
+<!ELEMENT tramo (distancia, coordenadas, sector)>
+<!ATTLIST tramo unidad CDATA #REQUIRED>
+
+<!ELEMENT distancia (#PCDATA)>
+<!ELEMENT sector (#PCDATA)>
+
+<!ELEMENT resultadoCarrera (vencedor, tiempo)>
+<!ELEMENT vencedor (#PCDATA)>
+<!ELEMENT tiempo (#PCDATA)>
+
+<!ELEMENT clasificacionMundial (piloto, piloto, piloto)>
+<!ELEMENT piloto (#PCDATA)>

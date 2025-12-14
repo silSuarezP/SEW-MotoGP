@@ -2,6 +2,30 @@
 /* Estilos para el documento piloto.html */
 
 /* Especificidad: 001 */
+h2 {
+    font-size: 3rem;                /* más grande que el resto de h2 */
+    color: #ff9900;                 /* naranja MotoGP para destacar */
+    font-weight: 700;               /* más grueso para jerarquía */
+    text-align: center;             /* centrado sobre la página */
+    margin: 10px 0 20px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* sombra sutil para profundidad */
+    letter-spacing: 1px;            /* mejora la legibilidad */
+    position: relative;
+}
+
+/* Efecto decorativo: línea degradada debajo del título */
+/* Especificidad: 002 */
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;                     /* ancho de la línea */
+    height: 4px;                     /* grosor de la línea */
+    margin: 10px auto 0 auto;        /* centrado */
+    background: linear-gradient(90deg, #ff6600, #ffcc00); /* degradado MotoGP */
+    border-radius: 2px;              /* esquinas redondeadas */
+}
+
+/* Especificidad: 001 */
 dl {
     display: grid;
     grid-template-columns: max-content 1fr; /* dt al lado de dd */

@@ -1,11 +1,12 @@
 /* Silvia Suárez Prendes - UO277412 */
-/* Estilos generales del proyecto MotoGP-Desktop*/
+/* Estilos generales del proyecto MotoGP-Desktop */
 
 /* Especificidad: 001 */
 body {
-    font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna y legible */
-    background-color: #121212; /* fondo oscuro elegante */
-    color: #f5f5f5; /* texto claro para contraste */
+    font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    /* Fuente moderna y legible */
+    background-color: #121212;
+    color: #f5f5f5;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -13,10 +14,16 @@ body {
 
 /* Especificidad: 001 */
 header {
-    background: linear-gradient(90deg, #ff6600, #ff9900); /* degradado naranja */
+    height: 80px;
+    /* altura fija */
+    min-height: 80px;
+    /* asegura la altura mínima */
+    max-height: 80px;
+    /* asegura que no se expanda */
+    background: linear-gradient(90deg, #ff6600, #ff9900);
+    /* degradado naranja */
     padding: 20px 40px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
 /* Especificidad: 002 */
@@ -41,29 +48,85 @@ header h2 {
 /* Especificidad: 001 */
 nav {
     font-size: 1.3rem;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* herencia tipográfica */
-    color: #000000; /* texto principal oscuro, más profesional que blanco */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
 }
 
 /* Especificidad: 001 */
 a {
-    color: #000000; /* naranja MotoGP para destacar enlaces */
-    text-decoration: none; /* eliminar subrayado por defecto */
-    font-weight: 600; /* un poco más de presencia */
-    transition: color 0.3s ease; /* transición suave al interactuar */
+    color: #000000;
+    /* naranja para destacar enlaces */
+    text-decoration: none;
+    /* eliminar subrayado por defecto */
+    font-weight: 600;
+    transition: color 0.3s ease;
+    /* transición al interactuar */
 }
 
-/* Especificidad: 011 */
-a:hover,
-a:focus {
-    color: #000000; /* naranja más oscuro al interactuar */
-    text-decoration: underline; /* indicar foco para accesibilidad */
-    outline: none; /* quitar borde de foco por defecto si se desea */
+/* Especificidad: 012 */
+nav a.active {
+    color: #064d36;
+    font-weight: bold;
+}
+
+/* Especificidad: 002 */
+nav a {
+    position: relative;
+    color: #ffffff;
+    /* Color normal de los enlaces */
+    text-decoration: none;
+    padding-bottom: 4px;
+    /* Espacio para el subrayado */
+    transition: color 0.3s ease;
+}
+
+/* Para el subrayado animado */
+/* Especificidad: 003 */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #064d36;
+    /* verde botella */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+/* Animación del subrayado */
+/* Especificidad: 013 */
+/* Especificidad: 013 */
+nav a:hover::after,
+nav a:focus::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Enlace activo con subrayado visible siempre */
+/* Especificidad: 013 */
+nav a.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    font-weight: bold;
+    color: #064d36;
+    /* texto también verde botella */
 }
 
 /* Especificidad: 001 */
 p {
     margin: 1em 0;
+}
+
+/* Especificidad: 002 */
+header+p {
+    font-size: 0.85rem;
+    /* tamaño más pequeño (medida relativa) */
+    color: #cccccc;
+    /* menos protagonismo visual */
+    margin: 10px 40px;
 }
 
 /* Especificidad: 002 */
@@ -73,7 +136,8 @@ p a {
 }
 
 /* Especificidad: 012 */
-p a:hover, p a:focus {
+p a:hover,
+p a:focus {
     text-decoration: underline;
 }
 
@@ -85,14 +149,6 @@ main {
 }
 
 /* Especificidad: 001 */
-h3 {
-    color: #ff9900;
-    border-bottom: 2px solid #ff6600;
-    padding-bottom: 5px;
-    margin-top: 2em;
-}
-
-/* Especificidad: 001 */
 footer {
     background-color: #222;
     color: #ffffff;
@@ -101,3 +157,70 @@ footer {
     margin-top: 40px;
 }
 
+
+/* Adaptabilidad en dispositivos móviles */
+@media screen and (min-width: 320px) and (max-width: 799px) {
+
+    /* Ocultar migas de navegación en móvil */
+    /* Especificidad: 002 */
+    header+p {
+        display: none;
+    }
+}
+
+/* Especificidad: 001 */
+video {
+    width: 100%;
+    height: auto;
+}
+
+/* Especificidad: 001 */
+audio {
+    width: 100%;
+}
+
+
+/* Ejercicio optativo 1 */
+/* ===== Encabezados ===== */
+
+/* Especificidad: 001 */
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+/* Especificidad: 001 */
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* Especificidad: 001 */
+h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ff9900;
+    border-bottom: 2px solid #ff6600;
+    padding-bottom: 5px;
+    margin-top: 2em;
+}
+
+/* Especificidad: 001 */
+h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Especificidad: 001 */
+h5 {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Especificidad: 001 */
+h6 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #cccccc;
+}
