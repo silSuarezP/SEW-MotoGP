@@ -5,18 +5,24 @@
 /* Especificidad: 001 */
 header {
     display: flex;
-    align-items: center;          /* alineación vertical */
-    justify-content: space-between; /* h1 a la izquierda, nav a la derecha */
-    gap: 20px;                    /* separación entre elementos */
-    flex-wrap: wrap;              /* adaptabilidad en pantallas pequeñas */
+    align-items: center;
+    /* alineación vertical */
+    justify-content: space-between;
+    /* h1 a la izquierda, nav a la derecha */
+    gap: 20px;
+    /* separación entre elementos */
+    flex-wrap: wrap;
+    /* adaptabilidad en pantallas pequeñas */
 }
 
 /* Especificidad: 001 */
 nav {
     display: flex;
     align-items: center;
-    gap: 24px;        /* separación entre enlaces */
-    flex-wrap: wrap; /* permite salto de línea si no caben */
+    gap: 24px;
+    /* separación entre enlaces */
+    flex-wrap: wrap;
+    /* permite salto de línea si no caben */
 }
 
 /* Especificidad: 002 */
@@ -35,7 +41,8 @@ nav a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: auto;              /* deja crecer el header */
+        height: auto;
+        /* deja crecer el header */
         max-height: none;
         padding: 20px;
         gap: 12px;
@@ -54,5 +61,44 @@ nav a {
     nav a {
         justify-content: center;
     }
+
+    article h2+img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+
+    }
+
 }
 
+/* Especificidad 102 */
+body>div#map {
+    width: 100%;
+    /* Ocupa todo el ancho del contenedor */
+    height: 500px;
+    /* Altura suficiente para ver el mapa */
+    margin: 1em 0;
+    /* Separación superior e inferior */
+    border: 1px solid #ccc;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Tarea 7: Adaptabilidad para dispositivos móviles */
+@media (max-width: 768px) {
+
+    /* Especificidad 102 */
+    body>div#map {
+        height: 300px;
+        /* Reducimos altura en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Especificidad 102 */
+    body>div#map {
+        height: 250px;
+        /* Altura aún menor en móviles muy pequeños */
+    }
+}

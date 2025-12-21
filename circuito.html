@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Silvia Suárez Prendes" />
+    <meta name="description" content="Meteorología MotoGP Desktop" />
+    <meta name="keywords" content="MotoGP, Meteorología, Circuito" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MotoGP - Meteorología</title>
+
+    <!-- para el uso de la api de meteorología -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="icon" href="multimedia/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">MotoGP Desktop</a></h1>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="piloto.html">Piloto</a>
+            <a href="circuito.html">Circuito</a>
+            <a href="meteorologia.html" class="active">Meteorología</a>
+            <a href="clasificaciones.php">Clasificaciones</a>
+            <a href="juegos.html">Juegos</a>
+            <a href="ayuda.html">Ayuda</a>
+        </nav>
+    </header>
+
+    <p>
+        Estás en:
+        <a href="index.html">Inicio</a> »
+        <strong>Circuito</strong>
+    </p>
+
+    <main>
+        <section>
+            <h2>Subir información del circuito (.html)</h2>
+            <input type="file" accept=".html,.htm">
+        </section>
+
+        <section>
+            <h2>Subir altimetría (.svg)</h2>
+            <input type="file" accept=".svg">
+        </section>
+
+        <section>
+            <h2>Mapa del circuito (.kml)</h2>
+            <input type="file" accept=".kml">
+            <div id="map" style="width:100%; height:500px;"></div>
+        </section>
+
+        <!-- Google Maps API (ejemplo con tu API Key personal) -->
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXr0cGiMeW-_3zkhJrKBuGCd00I7g5xAI&callback=inicializarMapa"
+            async defer></script>
+    </main>
+
+    <script src="js/circuito.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<circuito xmlns="http://www.uniovi.es"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.uniovi.es circuito.xsd">
+
+    <nombre>Circuit de Barcelona-Catalunya</nombre>
+    <longitudCircuito unidad="m">4655</longitudCircuito>
+    <anchuraMedia unidad="m">14</anchuraMedia>
+
+    <carrera>
+        <fecha>2025-05-03</fecha>
+        <horaInicio>14:00</horaInicio>
+        <vueltas>66</vueltas>
+    </carrera>
+
+    <ubicacion>
+        <localidad>Montmeló</localidad>
+        <pais>España</pais>
+    </ubicacion>
+
+    <patrocinador>Monster Energy</patrocinador>
+
+    <referencias>
+        <referencia>https://www.circuitcat.com/</referencia>
+        <referencia>https://es.wikipedia.org/wiki/Circuit_de_Barcelona-Catalunya</referencia>
+        <referencia>https://www.motogp.com/es/circuits/Barcelona-Catalunya</referencia>
+    </referencias>
+
+    <galeriaFotografias>
+        <fotografia>../multimedia/circuito1.jpg</fotografia>
+        <fotografia>../multimedia/circuito2.jpg</fotografia>
+        <fotografia>../multimedia/circuito3.jpg</fotografia>
+    </galeriaFotografias>
+
+    <galeriaVideos>
+        <video>../multimedia/circuito-video.mp4</video>
+    </galeriaVideos>
+
+    <origen>
+        <coordenadas>
+            <longitudGeo>2.2620</longitudGeo>
+            <latitud>41.5706</latitud>
+            <altitud>90</altitud>
+        </coordenadas>
+    </origen>
+
+    <tramos>
+        <tramo unidad="m">
+            <distancia>500</distancia>
+            <coordenadas>
+                <longitudGeo>2.2630</longitudGeo>
+                <latitud>41.5710</latitud>
+                <altitud>92</altitud>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo unidad="m">
+            <distancia>600</distancia>
+            <coordenadas>
+                <longitudGeo>2.2640</longitudGeo>
+                <latitud>41.5720</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo unidad="m">
+            <distancia>700</distancia>
+            <coordenadas>
+                <longitudGeo>2.2650</longitudGeo>
+                <latitud>41.5730</latitud>
+                <altitud>97</altitud>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+    </tramos>
+
+    <resultadoCarrera>
+        <vencedor>Marc Márquez</vencedor>
+        <tiempo>1:38:22.345</tiempo>
+    </resultadoCarrera>
+
+    <clasificacionMundial>
+        <piloto>Fabio Quartararo</piloto>
+        <piloto>Francesco Bagnaia</piloto>
+        <piloto>Marc Márquez</piloto>
+    </clasificacionMundial>
+</circuito>

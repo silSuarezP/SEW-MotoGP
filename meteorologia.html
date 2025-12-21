@@ -1,16 +1,17 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
-    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
     <meta name="author" content="Silvia Suárez Prendes" />
-    <meta name="description" content="Esto es un MotoGP Desktop" />
-    <meta name="keywords" content="Moto" />
+    <meta name="description" content="Meteorología MotoGP Desktop" />
+    <meta name="keywords" content="MotoGP, Meteorología, Circuito" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8" />
-    <title>MotoGP-Meteorología</title>
+    <title>MotoGP - Meteorología</title>
+
+    <!-- para el uso de la api de meteorología -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
@@ -22,25 +23,27 @@
         <h1><a href="index.html">MotoGP Desktop</a></h1>
 
         <nav>
-            <a href="index.html" accesskey="I" tabindex="1">Inicio</a>
-            <a href="piloto.html" accesskey="P" tabindex="2">Piloto</a>
-            <a href="circuito.html" accesskey="C" tabindex="3">Circuito</a>
-            <a href="meteorologia.html" class="active" accesskey="M" tabindex="4">Meteorología</a>
-            <a href="clasificaciones.html" accesskey="M" tabindex="5">Clasificaciones</a>
-            <a href="juegos.html" accesskey="V" tabindex="6">Juegos</a>
-            <a href="ayuda.html" accesskey="J" tabindex="7">Ayuda</a>
+            <a href="index.html">Inicio</a>
+            <a href="piloto.html">Piloto</a>
+            <a href="circuito.html">Circuito</a>
+            <a href="meteorologia.html" class="active">Meteorología</a>
+            <a href="clasificaciones.php">Clasificaciones</a>
+            <a href="juegos.html">Juegos</a>
+            <a href="ayuda.html">Ayuda</a>
         </nav>
     </header>
 
-    <!-- migas de navegación -->
     <p>
         Estás en:
         <a href="index.html">Inicio</a> »
         <strong>Meteorología</strong>
     </p>
 
-    <h2>Meteorología</h2>
-    <p>En desarrollo</p>
+    <main>
+        <h2>Meteorología</h2>
+    </main>
+
+    <script src="js/ciudad.js" defer></script>
 </body>
 
 </html>

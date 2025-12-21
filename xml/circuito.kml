@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Circuit de Barcelona-Catalunya</name>
+    <Placemark>
+      <name>Circuito</name>
+      <LineString>
+        <coordinates>
+          2.2630,41.5710,92
+          2.2640,41.5720,95
+          2.2650,41.5730,97
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>

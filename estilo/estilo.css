@@ -224,3 +224,40 @@ h6 {
     font-weight: 500;
     color: #cccccc;
 }
+
+/* Especificidad: 011 */
+a.enlace-juego {
+    color: white;
+    text-decoration: none;
+}
+
+/* Especificidad: 021 */
+a.enlace-juego:hover {
+    text-decoration: underline;
+}
+
+main section article a {
+    color: white; /* Cambia el color del texto a blanco */
+    text-decoration: underline; /* opcional, para mantener subrayado */
+}
+
+
+/* CIRCUITO.HTML */
+/* Selector de la sección principal */
+section > h2 {
+    font-size: 1.5em;
+}
+
+/* Selector para todos los párrafos dentro de section */
+section > p {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/* Selector para SVG dentro de section */
+section > svg {
+    width: 100%;
+    height: auto;
+}
+
+
