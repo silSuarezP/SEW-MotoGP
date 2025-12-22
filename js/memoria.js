@@ -48,9 +48,25 @@ class Memoria {
     }
 
     #comprobarJuego() {
-        const todasReveladas = this.#cartas.every(carta => carta.dataset.estado === "revelada");
-        if (todasReveladas) alert("¡Enhorabuena! Has completado el juego.");
+        const todasReveladas = this.#cartas.every(
+            carta => carta.dataset.estado === "revelada"
+        );
+
+        if (todasReveladas) {
+            const main = document.querySelector("main");
+            const primerH2 = main.querySelector("h2");
+
+            // Evitar duplicar el mensaje si ya existe
+            if (!document.querySelector(".mensaje-juego-completado")) {
+                const mensaje = document.createElement("p");
+                mensaje.textContent = "¡Enhorabuena! Has completado el juego.";
+                mensaje.classList.add("mensaje-juego-completado");
+
+                primerH2.insertAdjacentElement("afterend", mensaje);
+            }
+        }
     }
+
 
     barajarCartas() {
         const main = document.querySelector("main");

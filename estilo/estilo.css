@@ -236,6 +236,7 @@ a.enlace-juego:hover {
     text-decoration: underline;
 }
 
+/* Especificidad: 004 */
 main section article a {
     color: white; /* Cambia el color del texto a blanco */
     text-decoration: underline; /* opcional, para mantener subrayado */
@@ -244,20 +245,27 @@ main section article a {
 
 /* CIRCUITO.HTML */
 /* Selector de la sección principal */
+
+/* Especificidad: 002 */
 section > h2 {
     font-size: 1.5em;
 }
 
 /* Selector para todos los párrafos dentro de section */
+/* Especificidad: 002 */
 section > p {
     font-size: 1em;
     line-height: 1.4;
 }
 
 /* Selector para SVG dentro de section */
+/* Especificidad: 002 */
 section > svg {
     width: 100%;
     height: auto;
 }
 
-
+/* Especificidad: 011 */
+.memory-card h3 {
+    color: #FFFFFF;
+}
