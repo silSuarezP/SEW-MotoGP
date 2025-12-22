@@ -1,4 +1,5 @@
-<circuito>
+<?xml version="1.0" encoding="UTF-8"?>
+<circuito xmlns="http://www.uniovi.es">
     <nombre>Circuit de Barcelona-Catalunya</nombre>
     <longitudCircuito unidad="m">4655</longitudCircuito>
     <anchuraMedia unidad="m">14</anchuraMedia>
@@ -34,39 +35,215 @@
 
     <origen>
         <coordenadas>
-            <longitudGeo>2.2620</longitudGeo>
-            <latitud>41.5706</latitud>
-            <altitud>90</altitud>
+            <longitudGeo>2.2579</longitudGeo>
+            <latitud>41.5698</latitud>
+            <altitud>95</altitud>
         </coordenadas>
     </origen>
 
     <tramos>
         <tramo unidad="m">
-            <distancia>500</distancia>
             <coordenadas>
-                <longitudGeo>2.2630</longitudGeo>
-                <latitud>41.5710</latitud>
-                <altitud>92</altitud>
-            </coordenadas>
-            <sector>1</sector>
-        </tramo>
-        <tramo unidad="m">
-            <distancia>600</distancia>
-            <coordenadas>
-                <longitudGeo>2.2640</longitudGeo>
-                <latitud>41.5720</latitud>
+                <longitudGeo>2.2579</longitudGeo>
+                <latitud>41.5698</latitud>
                 <altitud>95</altitud>
             </coordenadas>
-            <sector>2</sector>
         </tramo>
         <tramo unidad="m">
-            <distancia>700</distancia>
             <coordenadas>
-                <longitudGeo>2.2650</longitudGeo>
-                <latitud>41.5730</latitud>
-                <altitud>97</altitud>
+                <longitudGeo>2.2591</longitudGeo>
+                <latitud>41.5698</latitud>
+                <altitud>95</altitud>
             </coordenadas>
-            <sector>3</sector>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2603</longitudGeo>
+                <latitud>41.5700</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2610</longitudGeo>
+                <latitud>41.5703</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2621</longitudGeo>
+                <latitud>41.5707</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2635</longitudGeo>
+                <latitud>41.5712</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2645</longitudGeo>
+                <latitud>41.5718</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2655</longitudGeo>
+                <latitud>41.5724</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2662</longitudGeo>
+                <latitud>41.5731</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2668</longitudGeo>
+                <latitud>41.5739</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2672</longitudGeo>
+                <latitud>41.5747</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2676</longitudGeo>
+                <latitud>41.5755</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2680</longitudGeo>
+                <latitud>41.5764</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2678</longitudGeo>
+                <latitud>41.5773</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2675</longitudGeo>
+                <latitud>41.5782</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2670</longitudGeo>
+                <latitud>41.5791</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2665</longitudGeo>
+                <latitud>41.5800</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2658</longitudGeo>
+                <latitud>41.5809</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2648</longitudGeo>
+                <latitud>41.5816</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2637</longitudGeo>
+                <latitud>41.5821</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2625</longitudGeo>
+                <latitud>41.5824</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2612</longitudGeo>
+                <latitud>41.5824</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2600</longitudGeo>
+                <latitud>41.5822</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2589</longitudGeo>
+                <latitud>41.5816</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2580</longitudGeo>
+                <latitud>41.5809</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2575</longitudGeo>
+                <latitud>41.5800</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2572</longitudGeo>
+                <latitud>41.5791</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2571</longitudGeo>
+                <latitud>41.5782</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
+        </tramo>
+        <tramo unidad="m">
+            <coordenadas>
+                <longitudGeo>2.2572</longitudGeo>
+                <latitud>41.5773</latitud>
+                <altitud>95</altitud>
+            </coordenadas>
         </tramo>
     </tramos>
 

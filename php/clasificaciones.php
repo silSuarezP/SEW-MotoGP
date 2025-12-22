@@ -55,19 +55,20 @@ if ($xml !== false) {
     <title>Clasificaciones MotoGP</title>
     <link rel="stylesheet" href="../estilo/estilo.css">
     <link rel="stylesheet" href="../estilo/layout.css">
+    <link rel="icon" href="multimedia/favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
     <header>
         <h1>MotoGP Desktop - Clasificaciones</h1>
         <nav>
-            <a href="../index.html">Inicio</a>
-            <a href="../piloto.html">Piloto</a>
-            <a href="../circuito.html">Circuito</a>
-            <a href="../meteorologia.html">Meteorología</a>
-            <a href="../clasificaciones.php" class="active">Clasificaciones</a>
-            <a href="../juegos.html">Juegos</a>
-            <a href="../ayuda.html">Ayuda</a>
+            <a href="../index.html" accesskey="I" tabindex="1">Inicio</a>
+            <a href="../piloto.html" accesskey="P" tabindex="2">Piloto</a>
+            <a href="../circuito.html" accesskey="C" tabindex="3">Circuito</a>
+            <a href="../meteorologia.html" accesskey="M" tabindex="4">Meteorología</a>
+            <a href="clasificaciones.php" class="active" accesskey="C" tabindex="5">Clasificaciones</a>
+            <a href="../juegos.html" accesskey="J" tabindex="6">Juegos</a>
+            <a href="../ayuda.html" accesskey="A" tabindex="7">Ayuda</a>
         </nav>
     </header>
 

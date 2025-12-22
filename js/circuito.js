@@ -37,14 +37,19 @@ class Circuito {
         const titulo = doc.querySelector('h2')?.textContent || "Sin título";
         const descripcion = doc.querySelector('p')?.textContent || "Sin descripción";
 
+        const section = document.createElement('section');
+
         const h2 = document.createElement('h2');
         h2.textContent = `Circuito: ${titulo}`;
-        this.main.appendChild(h2);
 
         const p = document.createElement('p');
         p.textContent = descripcion;
-        this.main.appendChild(p);
+
+        section.appendChild(h2);
+        section.appendChild(p);
+        this.main.appendChild(section);
     }
+
 }
 
 class CargadorSVG {
