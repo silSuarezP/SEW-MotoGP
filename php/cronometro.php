@@ -77,6 +77,9 @@ $xml = $clasificacion->consultar();
         <?php else: ?>
             <p>No se pudo cargar la información de la clasificación.</p>
         <?php endif; ?>
+        <footer>
+            <p>© 2025 MotoGP-Desktop — Silvia Suárez Prendes</p>
+        </footer>
     </main>
 </body>
 

@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
-    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
     <meta name="author" content="Silvia Suárez Prendes" />
-    <meta name="description" content="Documento con la información de ayuda del proyecto MOtoGP-Desktop" />
-    <meta name="keywords" content="Moto" />
+    <meta name="description" content="Documento de ayuda del proyecto MotoGP-Desktop" />
+    <meta name="keywords" content="MotoGP, pilotos, circuitos, meteorología, usabilidad" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8" />
-    <title>MotoGP</title>
+    <title>MotoGP Desktop – Ayuda</title>
 
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
@@ -23,13 +21,13 @@
         <h2>Ayuda</h2>
 
         <nav>
-            <a href="index.html"accesskey="I" tabindex="1">Inicio</a>
+            <a href="index.html" accesskey="I" tabindex="1">Inicio</a>
             <a href="piloto.html" accesskey="P" tabindex="2">Piloto</a>
             <a href="circuito.html" accesskey="C" tabindex="3">Circuito</a>
             <a href="meteorologia.html" accesskey="M" tabindex="4">Meteorología</a>
-            <a href="php/clasificaciones.php" accesskey="C" tabindex="5">Clasificaciones</a>
+            <a href="php/clasificaciones.php" accesskey="R" tabindex="5">Clasificaciones</a>
             <a href="juegos.html" accesskey="J" tabindex="6">Juegos</a>
-            <a href="ayuda.html"  accesskey="A" tabindex="7">Ayuda</a>
+            <a href="ayuda.html" accesskey="A" tabindex="7">Ayuda</a>
         </nav>
     </header>
 
@@ -44,50 +42,91 @@
 
         <section>
             <h3>Inicio</h3>
-            <p>La opción de <strong>Inicio</strong> lleva al usuario a la página principal del proyecto MotoGP-Desktop,
-                donde se puede acceder a todas las demás secciones. Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>
+                La página de <strong>Inicio</strong> actúa como punto de acceso principal al proyecto MotoGP-Desktop.
+                Desde ella el usuario puede navegar a todas las secciones disponibles mediante el menú de navegación.
+                La interfaz está adaptada a distintos dispositivos y prioriza una navegación clara y accesible.
+            </p>
         </section>
 
         <section>
             <h3>Piloto</h3>
-            <p>En la sección <strong>Piloto</strong> se muestra información detallada sobre Brad Binder, piloto
-                de MotoGP, incluyendo:</p>
+            <p>
+                En la sección <strong>Piloto</strong> se muestra información detallada sobre un piloto de MotoGP
+                (Brad Binder), obtenida a partir de datos estructurados.
+            </p>
             <ul>
-                <li>Datos personales (fecha y lugar de nacimiento, altura, peso, dorsal y moto).</li>
-                <li>Equipos en los que ha competido a lo largo de su carrera.</li>
-                <li>Conceptos relacionados con MotoGP explicados brevemente.</li>
-                <li>Resultados de la temporada MotoGP 2024 en una tabla accesible.</li>
-                <li>Enlaces de interés y audios relacionados con entrevistas o explicaciones.</li>
+                <li>Datos personales del piloto: fecha y lugar de nacimiento, altura, peso, dorsal y equipo.</li>
+                <li>Equipos en los que ha competido a lo largo de su trayectoria deportiva.</li>
+                <li>Conceptos básicos relacionados con MotoGP explicados de forma comprensible.</li>
+                <li>Resultados de la temporada 2024 presentados en una tabla accesible.</li>
+                <li>Contenido multimedia y enlaces externos de interés.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Circuito</h3>
+            <p>
+                La sección <strong>Circuito</strong> ofrece información técnica y descriptiva del circuito de Montmeló.
+                Los datos se obtienen a partir de documentos XML validados mediante esquemas XSD.
+            </p>
+            <ul>
+                <li>Nombre y localización del circuito.</li>
+                <li>Longitud total y características técnicas.</li>
+                <li>Representación gráfica de la altimetría del circuito.</li>
+                <li>Datos estructurados procesados dinámicamente en la página.</li>
             </ul>
         </section>
 
         <section>
             <h3>Meteorología</h3>
-            <p>La sección <strong>Meteorología</strong> proporciona información sobre el clima y condiciones del
-                circuito. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua.</p>
+            <p>
+                La sección <strong>Meteorología</strong> muestra información meteorológica del circuito de Montmeló para
+                un día
+                determinado. Los datos se cargan dinámicamente y permiten conocer las condiciones climáticas
+                relevantes para la competición, como temperatura, humedad o estado del cielo.
+            </p>
         </section>
 
         <section>
-            <h3>Resultados</h3>
-            <p>La opción <strong>Resultados</strong> permite consultar los resultados de pilotos y equipos en
-                diferentes temporadas. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.</p>
+            <h3>Clasificaciones</h3>
+            <p>
+                En <strong>Clasificaciones</strong> se presentan los resultados de carreras y campeonatos de MotoGP.
+                La información se obtiene a partir de documentos XML y se procesa mediante PHP para mostrar
+                dinámicamente el ganador de la carrera y otros datos relevantes.
+            </p>
         </section>
 
         <section>
-            <h3>Enlaces de interés</h3>
-            <p>Esta sección ofrece enlaces externos relevantes sobre MotoGP, equipos y pilotos. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <h3>Juegos y pruebas de usabilidad</h3>
+            <p>
+                La sección <strong>Juegos</strong> incluye una prueba de usabilidad diseñada para evaluar la
+                experiencia del usuario al interactuar con el proyecto MotoGP-Desktop.
+            </p>
+            <ul>
+                <li>Inicio y finalización de la prueba mediante control de tiempo.</li>
+                <li>Registro de respuestas del usuario.</li>
+                <li>Almacenamiento de los resultados en una base de datos.</li>
+                <li>Exportación e importación de los datos en formato CSV.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Accesibilidad</h3>
+            <p>
+                El proyecto MotoGP-Desktop ha sido desarrollado teniendo en cuenta criterios de accesibilidad,
+                incluyendo el uso de etiquetas semánticas HTML, navegación mediante teclado,
+                textos alternativos y un diseño adaptable a distintos tamaños de pantalla.
             </p>
         </section>
 
         <section>
             <h3>Acerca de</h3>
-            <p>La sección <strong>Acerca de</strong> contiene información sobre el proyecto MotoGP-Desktop y su
-                autor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua.</p>
+            <p>
+                MotoGP-Desktop es un proyecto académico desarrollado como parte de la asignatura,
+                con el objetivo de aplicar tecnologías web como HTML5, CSS, JavaScript, XML, PHP y bases de datos,
+                integrando además pruebas de usabilidad y criterios de accesibilidad.
+            </p>
         </section>
 
     </main>

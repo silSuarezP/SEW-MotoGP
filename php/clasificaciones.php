@@ -92,6 +92,9 @@ if ($xml !== false) {
             <p>No se pudo cargar la información de la clasificación.</p>
         <?php endif; ?>
     </main>
+    <footer>
+        <p>© 2025 MotoGP-Desktop — Silvia Suárez Prendes</p>
+    </footer>
 </body>
 
 </html>
